@@ -1,0 +1,10 @@
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/librustzcash.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/rust.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/libsodium.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/zksnarkjni.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/edit_cache.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/rebuild_cache.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/list_install_components.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/install.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/install/local.dir
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/install/strip.dir

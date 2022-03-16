@@ -1,0 +1,13 @@
+# Target labels
+ libsodium
+# Source files and their labels
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/libsodium
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/libsodium.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/CMakeFiles/libsodium-complete.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/rust/src/libsodium-stamp/libsodium-build.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/rust/src/libsodium-stamp/libsodium-configure.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/rust/src/libsodium-stamp/libsodium-download.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/rust/src/libsodium-stamp/libsodium-install.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/rust/src/libsodium-stamp/libsodium-mkdir.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/rust/src/libsodium-stamp/libsodium-patch.rule
+/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/rust/src/libsodium-stamp/libsodium-update.rule

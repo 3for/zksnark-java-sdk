@@ -1,1 +1,0 @@
-/Users/lanyu/zyd/zksnark-java-sdk-3for/cpp/../src/main/resources/native-package/macos/libzksnarkjni.dylib

@@ -72,10 +72,7 @@ ExternalProject_Add(
 		librustzcash
 		DOWNLOAD_COMMAND ""
 		CONFIGURE_COMMAND ""
-		BUILD_COMMAND cargo build
-		#		COMMAND cargo build
-		--package librustzcash
-		--release
+		BUILD_COMMAND cargo build --package librustzcash --release
 		BINARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../rust/librustzcash"
 		INSTALL_COMMAND ""
 		LOG_BUILD OFF)
@@ -118,7 +115,7 @@ add_dependencies(zksnarkjni rust)
 add_dependencies(zksnarkjni libsodium)
 
 if(CMAKE_SYSTEM_NAME MATCHES "Linux")
-	SET_TARGET_PROPERTIES( zksnarkjni PROPERTIES LINK_FLAGS "${LINK_FLAGS} -Wl,--wrap=memcpy" )
+	SET_TARGET_PROPERTIES( zksnarkjni PROPERTIES LINK_FLAGS "${LINK_FLAGS} -Wl,--wrap=memcpy -s" )
 	# Linux: support both x86_64 and aarch64
 	if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
 		INSTALL(TARGETS zksnarkjni LIBRARY DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/../src/main/resources/META-INF/native/linux64/aarch64)

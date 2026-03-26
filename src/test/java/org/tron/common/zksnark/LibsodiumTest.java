@@ -6,25 +6,6 @@ import org.junit.Test;
 import org.tron.common.util.Utils;
 
 public class LibsodiumTest {
-	private static final class HexBin {
-		private static byte[] decode(String hex) {
-			if (hex == null || (hex.length() & 1) != 0) {
-				throw new IllegalArgumentException("Hex string must have even length");
-			}
-
-			byte[] out = new byte[hex.length() / 2];
-			for (int i = 0; i < hex.length(); i += 2) {
-				int high = Character.digit(hex.charAt(i), 16);
-				int low = Character.digit(hex.charAt(i + 1), 16);
-				if (high < 0 || low < 0) {
-					throw new IllegalArgumentException("Invalid hex string");
-				}
-				out[i / 2] = (byte) ((high << 4) + low);
-			}
-			return out;
-		}
-	}
-
 	public static int NOTEENCRYPTION_AUTH_BYTES = 16;
 	public static int ZC_NOTEPLAINTEXT_LEADING = 1;
 	public static int ZC_V_SIZE = 8;

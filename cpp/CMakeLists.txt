@@ -172,7 +172,15 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Darwin")
 	endif()
 
 	INSTALL(TARGETS zksnarkjni LIBRARY DESTINATION ${MACOS_NATIVE_DESTINATION})
-	INSTALL(CODE "execute_process(COMMAND /usr/bin/codesign --force --sign - \"${MACOS_NATIVE_DESTINATION}/libzksnarkjni.jnilib\" COMMAND_ERROR_IS_FATAL ANY)")
+	INSTALL(CODE
+		"execute_process(
+			COMMAND /usr/bin/codesign --force --sign - \"${MACOS_NATIVE_DESTINATION}/libzksnarkjni.jnilib\"
+			RESULT_VARIABLE codesign_result
+		)
+		if(NOT codesign_result EQUAL 0)
+			message(FATAL_ERROR \"codesign failed with exit code \${codesign_result}: ${MACOS_NATIVE_DESTINATION}/libzksnarkjni.jnilib\")
+		endif()"
+	)
 else()
 	message(FATAL_ERROR "Unsupported platform: ${CMAKE_SYSTEM_NAME}. Only Linux and macOS are supported.")
 endif()
